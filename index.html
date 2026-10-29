@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Budget Support</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+            --border: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-box {
+            text-align: center;
+        }
+
+        .contact-box p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0f172a;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Sync Budget Support</h1>
+            <p>Get help, find answers, and learn how to make the most of real-time envelope budgeting.</p>
+        </header>
+
+        <!-- FAQ Section -->
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How does real-time budget syncing work?</div>
+                <div class="faq-answer">Sync Budget allows you to host a budget and share a secure share code with another device or partner. Changes made on either device update instantly so both of you stay completely in sync.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What should I do if my budget isn't syncing?</div>
+                <div class="faq-answer">First, check that both devices have an active internet connection. Try pulling down to manually refresh the budget view or re-entering your share code. If issues persist, try restarting the app.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my financial data secure?</div>
+                <div class="faq-answer">Yes. Sync Budget is designed with privacy in mind and does not collect or sell your personal data. All shared sync communications are securely routed.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I reset or create a new share code?</div>
+                <div class="faq-answer">You can manage your hosting status and share codes directly from your budget settings menu inside the app.</div>
+            </div>
+        </div>
+
+        <!-- Contact Support Section -->
+        <div class="section contact-box">
+            <h2>Need Further Assistance?</h2>
+            <p>If you encountered a bug, have a feature request, or need help with your account, reach out to us directly.</p>
+            <!-- Replace the email address below with your support email -->
+            <a href="mailto:support@yourdomain.com" class="btn">Contact Support</a>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="year">2026</span> Sunday Morning Productions. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
